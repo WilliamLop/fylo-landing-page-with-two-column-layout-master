@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* Paleta de colores */
+:root{
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+}
+
+/* Estilo body para buenas prácticas */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+}
+
+/* Estilos globales para estos elementos */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--ModerateCyan);
+
+}
+li{
+    cursor: pointer;
+}
+
+
+/* Estilo el header */
+header{
+    width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    width: 90%;
+    margin: 1.5rem auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+nav .logo{
+    width: 90px;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+/* Estilo el main, contenedor welcome */
+
+.welcome{
+    width: 80%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.welcome .ilustration-1-img img{
+    width:100%;
+}
+.welcome .welcome-info{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /* margin: 2rem auto; */
+}
+.welcome h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.welcome .welcome-info .text-content{
+    font-size:0.9rem;
+}
+.welcome .welcome-info .input-welcome{
+    padding: 1rem;
+    width:calc(100% - 2.1rem);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+/* Estilo global de boton */
+.btn-primary{
+    padding: 1rem;
+    border: none;
+    background-color:var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: var(--VeryDarkBlue);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Estilo placeholder global */
+::placeholder {
+    color: var(--LightGray);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* Estilo mi contenedor see-how */
+.stay-productive{
+    width: 100%;
+    margin-top: 3rem;
+
+}
+.top-mobile{
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:50px; 
+}
+
+.stay-productive .content{
+    padding: 3rem 0;
+    margin: 0 auto;
+    background-color:var(--LightGrayishBlue);
+
+}
+.container-stay{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    padding: 0;
+    gap: 3rem;
+}
+
+.stay-productive .img-stay img{
+    width:100%;
+}
+
+.stay-productive .info .title{
+    font-size:1rem;
+    text-align: center;
+}
+
+.stay-productive .info .description{
+    font-family: 'Open Sans', sans-serif;
+    color: #5c5c5c;
+    font-size: 0.8rem;
+}
+
+.stay-productive .info .see-how{
+    text-align: center;
+}
+
+
+.stay-productive .info .see-how{
+    width: 57%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--ModerateCyan);
+    font-size: 0.93rem;
+}
+
+.stay-productive .info .see-how img{
+    width: 20px;
+}
+
+.stay-productive .content-note{
+    background-color: #fff;
+    padding: 1rem;
+    filter: drop-shadow(1px 1px 2px rgba(128, 128, 128, 0.301));
+    border-radius: 0.5rem;
+    width: 82%;
+    margin: 2rem auto;
+}
+
+.stay-productive .content-note .user{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 68%;
+}
+
+
+.stay-productive .content-note .note p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.69rem;
+    position: relative;
+    bottom: 9px;
+
+}
+
+.stay-productive .content-note .user img{
+    width:40px;
+    border-radius: 50%;
+}
+
+.stay-productive .content-note .user .info h3{
+    font-size: 0.8rem;  
+    letter-spacing: 1px;
+}
+.stay-productive .content-note .user .info p{
+    font-size: 0.6rem;  
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* estilo get early */
+
+.get-access{
+    width: 100%;
+    background-color: var(--DesaturatedBlue);
+    color: var(--LightGrayishBlue);
+}
+.get-access .content{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: end;
+    gap: 1rem;
+    padding: 3.5rem 0;
+    
+}
+
+.get-access .content .info{
+    text-align: center;
+    
+}
+.get-access .content .info h2{
+    font-size: 1.2rem;
+}
+
+.get-access .content .info .text-description{
+    font-size:0.95rem
+}
+
+.get-access .get-started-free input{
+    padding: 1rem;
+    width:calc(100% - 2rem);
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+
+}
+.g-s-f{
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+}
+
+
+/* Estilo el footer */
+
+footer{
+    box-sizing: border-box;
+    background-color: var(--VeryDarkBlue);
+    color: var(--LightGrayishBlue);
+    padding: 5rem 0 3rem 0;
+}
+
+.footer{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    gap: 1rem;
+}
+
+footer .img{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer .contain{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+.footer ul{
+    padding: 0.4rem 0;
+    line-height: 2.5;
+    height: 100%;
+    margin: 0;
+    /* text-align: center; */
+}
+.footer ul li:hover{
+    color: var(--ModerateCyan);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.footer .redes{
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer .redes img:hover{
+    background-color: var(--ModerateCyan);
+    transition: all 0.6s ease-in-out;
+    border: 1px solid var(--VeryDarkBlue);
+    
+}
+.footer .redes img{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    
+}
+
+/* Aplico los respectivos media querys para diferentes dispositivos */
+
+@media (min-width: 48rem) { /*48rem = 768px*/
+    /* Estilo el header  */
+    nav{
+        margin: 2rem auto;
+    }
+    nav .logo{
+        width: 120px;
+    }
+    nav ul{
+        display: flex;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    /* Creo una clase para hacer un rtl a los contenedores  */
+    .rtl{
+        direction: rtl;
+    }
+    .ltr{
+        direction: ltr;
+    }
+    /* Estilo el contenedor welcome */
+    .welcome{
+        width:90%;
+    }
+    .welcome h1{
+        font-size: 1.4rem;
+    }
+    .welcome .welcome-info{
+        direction: ltr;
+        text-align: left;
+
+    }
+    .welcome .welcome-info .input-welcome{
+        width: 50%;
+        direction: ltr;
+        padding: 0.8rem;
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 30%;
+        font-size: 0.6rem;
+    }
+     /* Estilo el contenedor stay-productive */
+    .stay-productive .content-note{
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        width: 82%;
+        margin: 0;
+    }
+    .stay-productive .info .title{
+        font-size:1.2rem;
+        text-align: left;
+    }
+    .container-stay{
+        width: 90%;
+    }
+    .stay-productive .info .see-how{
+        width: 59%;
+        margin: 1rem 0 1rem 0;
+        text-align: left;
+        justify-content: start;
+
+    }
+    .top-mobile{
+        background-image: url(images/bg-curve-desktop.svg);
+        height: 100px;
+    }
+    .stay-productive{
+        margin-top: 7rem;
+    
+    }
+    /* Estilo el contenedor get-acces */
+
+    .get-access .content{
+        width: 90%;
+        gap: 3rem;
+        
+    }
+    .get-access .content .info{
+        text-align: left;
+    }
+    .get-access .content .info h2{
+        font-size: 1.6rem;
+    }
+    .get-access .content .info .text-description{
+        font-size:0.7rem;
+        width: 100%;
+    }
+    .g-s-f{
+        width: 55%;
+
+    }
+    /* Estilo el footer */
+    .footer{
+        width: 90%;
+    }
+    
+    footer .img{
+        width: 90%;
+    }
+    
+    .footer ul{
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer ul li{
+        width: 55%;
+    }
+    
+    .footer .redes{
+        justify-content: end;
+    }
+    
+    
+}
+
+@media (min-width: 64rem) { /*64rem = 1024px*/
+    /* Estilo el header  */
+    nav .logo{
+        width: 150px;
+    }
+    nav ul{
+        display: flex;
+        gap: 3rem;
+    }
+    /* Estilo el contenedor welcome */
+    .welcome h1{
+        font-size: 1.89rem;
+    }
+    .welcome .welcome-info .text-content{
+        font-size: 0.79rem;
+        width: 92%;
+    }
+    .welcome .welcome-info .input-welcome{
+        width: 55%;
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 30%;
+    }
+
+    /* Estilo el contenedor stay-productive */
+    .stay-productive .content-note{
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        width: 60%;
+        margin: 0;
+    }
+    .stay-productive .info .title{
+        font-size:1.6rem;
+        text-align: left;
+    }
+    .container-stay{
+        width: 90%;
+    }
+    .stay-productive .info .see-how{
+        width: 59%;
+        margin: 1rem 0 1rem 0;
+        text-align: left;
+        justify-content: start;
+
+    }
+    /* Estilo get-access */
+    .get-access .content{
+        width: 90%;
+        gap: 6rem;
+        
+    }
+    .get-access .content .info h2{
+        font-size: 1.6rem;
+    }
+    .get-access .content .info .text-description{
+        font-size:0.85rem;
+        width: 93%;
+    }
+    .g-s-f{
+        width: 45%;
+
+    }
+    .get-access .get-started-free input{
+        padding: 1.1rem;
+    }
+    /* Estilo footer */
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer ul li{
+        width: 45%;
+    }
+    
+    .footer .redes{
+        justify-content: end;
+    }
+    
+}
+
+@media (min-width: 80rem) { /*80rem = 1280px*/
+
+    /* Estilo el contenedor welcome */
+    .welcome h1{
+        font-size: 2rem;
+    }
+    .welcome .welcome-info .input-welcome{
+        width: 58%;
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 31%;
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 30%;
+        font-size: 0.8rem;
+    }
+     /* Estilo el contenedor stay-productive */
+    .stay-productive .content-note{
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        width: 47%;
+        margin: 0;
+    }
+    
+    .stay-productive .content-note .note p{
+        font-size: 0.76rem;
+    }
+
+    .stay-productive .info .title{
+        font-size:1.9rem;
+        text-align: left;
+    }
+    .container-stay{
+        width: 90%;
+    }
+    .stay-productive .info .see-how{
+        width: 31%;
+        margin: 1rem 0 1rem 0;
+        text-align: left;
+        justify-content: start;
+    }
+    .stay-productive .info .description{
+        font-family: 'Open Sans', sans-serif;
+        color: #5c5c5c;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    /* Estilo get-access */
+    .get-access .content{
+        width: 90%;
+        gap: 10rem;
+        
+    }
+    .get-access .content .info h2{
+        font-size: 1.55rem;
+    }
+    .get-access .content .info .text-description{
+        width: 80%;
+    }
+    .g-s-f{
+        width: 35%;
+        font-size: 0.8rem;
+
+    }
+    
+    .get-access .get-started-free input{
+        padding: 1.05rem;
+    }
+    /* Estilo footer */
+    .footer ul li{
+        width: 30%;
+    }
+
+    
+}
+
+@media (min-width: 90rem) { /*90rem = 1440px*/
+    
+    nav ul{
+        font-size: 1.3rem;
+    }
+    /* Estilo el contenedor welcome */
+    .welcome h1{
+        font-size: 2.4rem;
+    }
+    .welcome .welcome-info .input-welcome{
+        width: 47%;
+        padding: 1rem;
+
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 30%;
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+
+    }
+    .welcome .welcome-info .text-content{
+        font-size: 1rem;
+        width: 85%;
+    }
+    .stay-productive .content-note{
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        width: 42%;
+        margin: 0;
+    }
+    .stay-productive .info .title{
+        font-size:2.3rem;
+    }
+    .stay-productive .info .see-how{
+        width: 29%;
+        gap: 0.5rem;
+    }
+    .stay-productive .content-note .note p{
+        font-size: 0.8rem;
+    
+    }
+    .stay-productive .info .description{
+        font-family: 'Open Sans', sans-serif;
+        color: #5c5c5c;
+        font-size: 0.9rem;
+    }
+    .stay-productive .content-note .user .info p{
+        font-size: 0.7rem;  
+    
+    }
+
+    .g-s-f{
+        width: 30%;
+    }
+
+    .get-access .content{
+        width: 90%;
+        gap: 15rem;
+        
+    }
+    .get-access .content .info h2{
+        font-size: 1.6rem;
+    }
+    .get-access .get-started-free input{
+        padding: 1.2rem;
+    }
+    .get-access .content .info .text-description{
+        width: 70%;
+    }
+    
+}
+
+@media (min-width: 120rem) { /*120rem = 1920px*/
+    /* Estilo el contenedor welcome */
+    nav ul{
+        font-size: 1.2rem;
+    }
+    .welcome h1{
+        font-size: 3.2rem;
+    }
+    .welcome .welcome-info .text-content{
+        font-size: 1.3rem;
+        width: 80%;
+    }
+    .welcome .welcome-info .input-welcome{
+        padding: 1.2rem;
+
+    }
+    .welcome .welcome-info .btn-welcome{
+        font-size: 0.9rem;
+        padding: 1.2rem;
+
+    }
+    /* Estilo stay-productive */
+
+    .stay-productive .content-note .user .info p{
+        font-size: 0.7rem;  
+        font-family: 'Raleway', sans-serif;
+    
+    }
+    .stay-productive .content-note .note p{
+        font-size: 1.06rem;
+    
+    }
+    .stay-productive .info .description{
+        font-family: 'Open Sans', sans-serif;
+        color: #5c5c5c;
+        font-size: 1.1rem;
+    }
+    .stay-productive .info .see-how{
+        width: 20%;
+        margin-top: 2rem;
+        
+    }
+    /* Estilo get-access */
+    .get-access .content .info h2{
+        font-size: 1.7rem;
+    }
+
+    .get-access .content .info .text-description{
+        width: 59%;
+        font-size: 0.95rem;
+    }
+   
+    
+}
+
+@media (min-width: 150rem) { /*150rem = 2560px*/
+    /* Estilo el header  */
+    nav .logo{
+        width: 200px;
+    }
+    nav ul{
+        display: flex;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /*Estilo welcome */
+    .welcome h1{
+        font-size: 4.4rem;
+    }
+    .welcome .welcome-info .text-content{
+        font-size:1.7rem;
+    }
+    .welcome .welcome-info .input-welcome{
+        width: 50%;
+        direction: ltr;
+        padding: 1.5rem;
+    }
+    .welcome .welcome-info .btn-welcome{
+        width: 30%;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+
+    }
+    /* Change placeholder */
+
+    ::placeholder{
+        font-size: 1.1rem;
+    }
+    /* Estilo stay */
+
+    .stay-productive .info .title{
+        font-size:2.7rem;
+    }
+    .stay-productive .info .see-how{
+        width: 25%;
+        font-size: 1.5rem;
+    }
+    .stay-productive .info .see-how img{
+        width: 35px;
+
+    }
+    .stay-productive .info .description{
+        font-size: 1.65rem;
+    }
+    .stay-productive .content-note .note p{
+        font-size: 1.4rem;
+    
+    }
+    .stay-productive .content-note .user .info p{
+        font-size: 0.9rem;  
+    
+    }
+    .stay-productive .content-note .user .info h3{
+        font-size: 1rem;  
+    
+    }
+    /* Estilo get-access */
+    .get-access .content .info h2{
+        font-size: 2.3rem;
+    }
+
+    .get-access .content .info .text-description{
+        width: 59%;
+        font-size: 1.3rem;
+    }
+    .g-s-f{
+        width: 25%;
+        padding: 1.6rem;
+        font-size: 1.1rem;
+
+    }
+
+    .get-access .content .info h2{
+        font-size: 2.1rem;
+    }
+    .get-access .get-started-free input{
+        padding: 1.8rem;
+    }
+    .get-access .content .info .text-description{
+        width: 70%;
+    }
+    /* Estilo el footer */
+    .footer{
+        font-size: 1.5rem;
+    }
+    .footer .redes{
+        gap: 2rem;
+    }
+    .footer .redes img{
+        width: 35px;
+        padding: 0.7rem;
+    }
+}
